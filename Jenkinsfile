@@ -7,7 +7,6 @@ pipeline {
 				}
 				steps {
 					sh 'echo "Step One"'
-					sh 'echo${EXECUTE}'
 				}
 			}
 			stage('Second') {
