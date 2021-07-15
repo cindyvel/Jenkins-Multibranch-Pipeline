@@ -14,10 +14,11 @@ pipeline {
 				
 				when {
 					environment name: 'EXECUTE' , value: 'True'
+				}
 				steps {
 					sh 'echo "Step Two"'
 				}
-			   }
+			   
 			}
 			stage('Third') {
 				steps {
