@@ -13,13 +13,14 @@ pipeline {
 			stage('Second') {
 				when {
 				beforeInput true
-			        }
+			  
 				steps {
 					script { env.EXECUTE="True"
 						
 				      }
 				}
 			}
+		}
 			stage('Third') {
 				steps {
 					script { echo ${VARIABLE}
