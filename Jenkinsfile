@@ -3,7 +3,7 @@ pipeline {
 		stages {
 			stage('First') {
 				environment {
-					EXECUTE = 'True'
+					EXECUTE == 'True'
 				}
 				steps {
 					sh 'echo "Step One"'
