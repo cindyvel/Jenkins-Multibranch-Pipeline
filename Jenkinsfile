@@ -12,7 +12,7 @@ pipeline {
 			
 			stage('Second') {
 				when {
-				environment name = 'EXECUTE', value="True"
+				beforeInput true
 			        }
 				steps {
 					script { env.EXECUTE="True"
