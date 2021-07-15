@@ -9,17 +9,17 @@ pipeline {
 				      }
 				}
 			}
-			when {
-				EXECUTE = "True"
-				
+			
 			stage('Second') {
+				when {
+				environment name = 'EXECUTE', value="True"
+			        }
 				steps {
 					script { env.EXECUTE="True"
 						
 				      }
 				}
-			} 
-	           }
+			}
 			stage('Third') {
 				steps {
 					script { echo ${VARIABLE}
